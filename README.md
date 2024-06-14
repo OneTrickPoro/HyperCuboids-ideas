@@ -36,8 +36,8 @@ So there will be:
 * For 3-colored pieces we have:  
   $2^3 \cdot Cyc(4,3)=2^3\cdot (0+1+3+5  )= $  
   $=8 \cdot 9=72$  pieces.
-* For 4-colored pieces we have:
-  $2^4 \cdot Cyc(4,4)=2^4\cdot 1= 1 $ pieces.
+* For 4-colored pieces we have:  
+  $2^4 \cdot Cyc(4,4)=2^4\cdot 1=  16$ pieces.  
 
 
 
