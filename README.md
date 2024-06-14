@@ -65,12 +65,13 @@ In the following sections, we will denoted some of this cells using the classic 
 |:---:|:---:|:---:|:---:|:---:| 
 | 2x2x2x3 | 16 | 8 | 0 | 0 |
 
-
-Solve idea by Ema:
->! - Solve the middle 3-$c$ pieces a tower cell (similar to solving a $1 \times 2 \times 2 \times 2$ ).  
->! - Orient both $2$-cubic cells at the same time, slicing the solved part for exchanging pieces, caring to use an even number of slices moves.    
->! - RKT solved the cubics cells, using the same tower cells as R.  
->! - Fix tower cell middle layer.
+<details>
+  <summary>Solve idea by Ema (spoiler?)</summary>
+- Solve the middle 3-$c$ pieces a tower cell (similar to solving a $1 \times 2 \times 2 \times 2$ ).<br>
+- Orient both $2$-cubic cells at the same time, slicing the solved part for exchanging pieces, caring to use an even number of slices moves.  <br>   
+- RKT solved the cubics cells, using the same tower cells as R.    <br>
+- Fix tower cell middle layer.  <br>
+</details>
 
 ### 2x2x3x3
 
@@ -79,21 +80,25 @@ Solve idea by Ema:
 | 2x2x3x3 | 16 | 16 | 4 | 0 |
   
 
-Solve idea by Ema:
->! - Solve a domino cell.  
->! - Orient the opposite domino cell, eventually re-solving the first cell.  
->! - Move pieces on the correct layers of the last cell.  
->! - Solve last domino cell using 3-dimensional cuboids algorithms an even number of times and conjucating in between them.  
+<details>
+  <summary>Solve idea by Ema (spoiler?)</summary>
+- Solve a domino cell.  <br>   
+- Orient the opposite domino cell, eventually re-solving the first cell.  <br>   
+- Move pieces on the correct layers of the last cell.  <br>   
+- Solve last domino cell using 3-dimensional cuboids algorithms an even number of times and conjucating in between them.  <br>   
+</details>
 
 ### 2x3x3x3
 | Puzzle | 4c pieces | 3c pieces | 2c pieces | 1c pieces | 
 |:---:|:---:|:---:|:---:|:---:| 
 | 2x3x3x3 | 16 | 24 | 12 | 2 |
 
-Solve idea by Ema:
->! - Orient both 3-cubic cells at the same time.  
->! - Solve first cubic cell.  
->! - Solve the second cubic cell using RKT.
+<details>
+  <summary>Solve idea by Ema (spoiler?)</summary>
+- Orient both 3-cubic cells at the same time.   <br>   
+- Solve first cubic cell.   <br>   
+- Solve the second cubic cell using RKT. <br>   
+</details>
 
 ### 2x2x2x4
 | Puzzle | 4c pieces | 3c pieces | 2c pieces | 1c pieces | 
