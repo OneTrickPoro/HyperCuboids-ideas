@@ -1,25 +1,26 @@
 # Hypercuboids
 
-# General Context
+# Introduction
 A hypercuboids is the multi-dimensional version of a cuboid.  
 In a general context, we define a hypercuboid as an $n$-dimensional puzzle denoted by $a_1 \times a_2 \times \dots \times a_n$.  
- For the sake of clarity and costintecy, we will use $a_1,a_2, \dots a_n$ non-decreasing values.  
+ For the sake of clarity and consistency, we will use $a_1,a_2, \dots a_n$ non-decreasing values.  
+ 
 ## Structure
 A hypercuboid, as defined, is composed of $2n$ cells, each of which is $(n-1)$-dimensional.
 
 For a generel element $a_i$, we will define  $\bar{a_i}= \max (0, a_i-2)$.
 
 Given $k>0$ and $n \geq 1$, we can denote the cyclic sum of the products of elements $\bar{a_1}, \bar{a_2}, \dots, \bar{a_n}$ taken $n-k$ at a time by $Cyc(n,k)$.  
-* For example: $Cyc(5,4) = \bar{a_1} + \bar{a_2} + \bar{a_3}  + \bar{a_4} +\bar{a_5}$, i.e. the sum of gruops of 5-4=1 elemets, chosen in $\bar{a_1}, \bar{a_2}, \bar{a_3}, \bar{a_4}, \bar{a_5}$.   
+* For example: $Cyc(5,4) = \bar{a_1} + \bar{a_2} + \bar{a_3}  + \bar{a_4} +\bar{a_5}$, i.e. the sum of gruops of 5-4=1 elements, chosen in $\bar{a_1}, \bar{a_2}, \bar{a_3}, \bar{a_4}, \bar{a_5}$.   
 * Another example: $Cyc(4,2) = \bar{a_1} \bar{a_2} + \bar{a_1} \bar{a_3} + \bar{a_1} \bar{a_4} + \bar{a_2} \bar{a_3} + \bar{a_2} \bar{a_4} + \bar{a_3} \bar{a_4}$, i.e., the sum of the products of all possible ordered pairs made with $\bar{a_1}, \bar{a_2}, \bar{a_3}, \bar{a_4}$.
 
 
 Note that $Cyc(n,k)$ has $C_{n,k} = \binom{n}{k}$ terms.  
 We can also define $Cyc(n,n)=1$
 
-Using the above notation, an $a_1 \times a_2 \times \dots \times a_n$ hypercuboids has $2^k\cdot C(n,k)$ pieces which are $k$-colored.
+Using the above notation, the $a_1 \times a_2 \times \dots \times a_n$ hypercuboid has $2^k\cdot C(n,k)$ pieces which are $k$-colored.
 
-For example, consider a $2 \times 3 \times 5 \times 7$ hypercuboids, in this case:  
+For example, consider the $2 \times 3 \times 5 \times 7$ hypercuboid, in this case:  
 * $a_1$ =2, so $\bar{a_1}=0$,
 * $a_2$ =3, so $\bar{a_1}=1$,
 * $a_3$ =5, so $\bar{a_1}=3$,
@@ -50,8 +51,8 @@ In the following sections, we will denoted some of this cells using the classic 
 * " $n$ -cubic cell" will indicate a  $n \times n \times  n$-cell.
 
 ## General solves strategies
-* Hypercuboids in the form $1 \times a \times b \times c$ can be solved first orienting the $a \times b \times c$-cells, then solving the puzzle like a 3-dimensional $a \times b \times c$.
-* Hypercuboids in the form $2 \times a \times b \times c$ can be solved first orienting the $a \times b \times c$-cells, then solving one oriented cell at the time, eventually adapting solve for new possible cases.
+* Hypercuboids in the form $1 \times a \times b \times c$ can be solved by first orienting the $a \times b \times c$-cells, then solving the puzzle like a 3-dimensional $a \times b \times c$.
+* Hypercuboids in the form $2 \times a \times b \times c$ can be solved first by solving the $a \times b \times c$-cells and then solving the opposite, eventually adapting solve for new possible cases.
 * If 2 dimensions have the same values, the puzzle can be see as duoprism. 
 * If 3 dimensions have the same values, i.e. there is a couple of $n$-cubic cells, RKT can be used on this cells.
 * If 4 dimensions have the same values, we have an hypercube.
