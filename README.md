@@ -22,9 +22,9 @@ Using the above notation, the $a_1 \times a_2 \times \dots \times a_n$ hypercubo
 
 For example, consider the $2 \times 3 \times 5 \times 7$ hypercuboid, in this case:  
 * $a_1$ =2, so $\bar{a_1}=0$,
-* $a_2$ =3, so $\bar{a_1}=1$,
-* $a_3$ =5, so $\bar{a_1}=3$,
-* $a_3$ =7, so $\bar{a_1}=5$.  
+* $a_2$ =3, so $\bar{a_2}=1$,
+* $a_3$ =5, so $\bar{a_3}=3$,
+* $a_4$ =7, so $\bar{a_4}=5$.  
 
 So there will be:
  * For 1-colored pieces we have:  
