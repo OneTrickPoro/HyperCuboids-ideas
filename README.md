@@ -26,17 +26,17 @@ For example, consider a $2 \times 3 \times 5 \times 7$ hypercuboids, in this cas
 * $a_3$ =7, so $\bar{a_1}=5$.  
 
 So there will be:
- * For 1-$c$ pieces we have:  
+ * For 1-colored pieces we have:  
   $2^1 \cdot Cyc(4,1)=2^1\cdot (0\cdot1\cdot3 + 0\cdot 3 \cdot 5 + 1 \cdot 3 \cdot 5 + 0\cdot 1 \cdot5 )=$  
   $=2 \cdot (0+0+15+0)=30$  pieces.
- * For 2-$c$ pieces we have:  
+ * For 2-colored pieces we have:  
   $2^2 \cdot Cyc(4,2)=2^2\cdot ( 0\cdot 1+ 0\cdot 3 +0 \cdot 5  + 1\cdot3 +1\cdot 5 + 3\cdot 5  )= $  
   $=4 \cdot (0+0+0+0+3+5+15)=92$  pieces.
-* For 3-$c$ pieces we have:  
+* For 3-colored pieces we have:  
   $2^3 \cdot Cyc(4,3)=2^3\cdot (0+1+3+5  )= $  
   $=8 \cdot 9=72$  pieces.
-* For 4-$c$ pieces we have:
-$2^4 \cdot Cyc(4,4)=2^4\cdot 1= 16 $ pieces.
+* For 4-colored pieces we have:
+  $2^4 \cdot Cyc(4,4)=2^4\cdot 1= 1 $ pieces.
 
 
 
@@ -47,7 +47,7 @@ $a \times b \times c \times d$ is composed of 8 cells: 2 $(a \times b \times  c)
 In the following sections, we will denoted some of this cells using the classic 3-dimensional puzzle names, in particular: 
 * "tower cell" will indicate a $2 \times 2 \times  3$-cell;
 * "domino cell"  will indicate a  $2 \times 3 \times  3$-cell;
-* "$n$-cubic cell" will indicate a  $n \times n \times  n$-cell.
+* " $n$ -cubic cell" will indicate a  $n \times n \times  n$-cell.
 
 ## General solves strategies
 * Hypercuboids in the form $1 \times a \times b \times c$ can be solved first orienting the $a \times b \times c$-cells, then solving the puzzle like a 3-dimensional $a \times b \times c$.
