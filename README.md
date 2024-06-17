@@ -45,7 +45,7 @@ So there will be:
   $2^4 \cdot Cyc(4,4)=2^4\cdot 1=  16$ pieces.
 
 Here is a link to a script for general case in $n$ dimensions: insert sides and run it.
-[Link here](https://tio.run/##TY/basQgEIbvfYohvdEcSg4sC4HtU/QuhJJN3O6A0aAG0qdPnZge1Itx/P9v/Jcv/zS62XeHk3Rwg@6Sn7sHWi@onbQe4vsQDih0Huqt2S7bFYriDbo6b4Lj2jOG82KCGn3wGKMcO3wflsjzsPEyhw0KqAU8jA0l6kju2WLNtI4@CNUw36cwxvkWKsAHaOPpBlI5SUVX9pDCaeDUqNpeMOYN2UtGaCS0HfSn5FWupObHGJFVomWUazSrJnWdppi6deY/uNHM9/g7qojyG@aVOqgHj0Y7fibL4Y8ekqEQB3@xqD133nIUWTLCgnKUroUkj6Ojin6c3WKHRUvybvyg/uuDSOz7Nw "Python 3 – Try It Online")
+[Link here](https://tio.run/##TY9Pi4MwEMXv@RRDe0k0LmqRgtDe9743kSW1aTugiSQR3E/vZprunySHyfDeb97MX@FhzWHb9u/GaxfA41V7UPHBiD60UK@HtVmPUBRn6Gp5kI089mwfHtqAWwzMzt6dmhhLzhN0jXzdHugwhtNsIxpDHGDt6JP005F4UisvJaxQQC3gZl0s0aQYPYvw6zKEKBzVdLnGTBSpAryBsYF@oEevqejKHjJ4GTg1qrYXjAVL9pIRGgntlLlrXslRG/4cI/JKtIyiDnYxpK6zDDO/TPwHN9jpktJRRZTfZd6og0YFtMbz12YS/uhxMxTiyZ8dmsB9cBxFvhtgRj1o38JOptFJRYnzU@qwZNl92KDG//ooEtv2DQ "Python 3 – Try It Online")
 
 ## 4D Hypercuboids
 
