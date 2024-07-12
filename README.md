@@ -10,17 +10,27 @@ A hypercuboid, as defined, is composed of $2n$ cells, each of which is $(n-1)$-d
 
 For a general element $a_i$, we will define  $\bar{a_i}= \max (0, a_i-2)$.
 
-Given $k>0$ and $n \geq 1$, we can denote the cyclic sum of the products of elements $\bar{a_1}, \bar{a_2}, \dots, \bar{a_n}$ taken $n-k$ at a time by $Cyc(n,k)$.  
+**Important note: $n$-c pieces vs $n$-g pieces**    
+ In the following exposition, we will talk about the $k$-c pieces, i.e., pieces that are colored with $k$ different colors. This could be considered an abuse of notation since we should be talking about the $k$-g pieces, i.e., the pieces that are affected by $k$ different [grips](https://hypercubing.xyz/theory/grip_theory/). However, in the particular case of the hypercuboids, the two concepts coincide. 
+
+ In the following exposition we will talk about the $k$-c pieces, i.e. pieces which is colored by $k$ different colors. 
+
+Given $k \geq 0$ and $n \geq 1$, we can denote the cyclic sum of the products of elements $\bar{a_1}, \bar{a_2}, \dots, \bar{a_n}$ taken $n-k$ at a time by $Cyc(n,k)$.  
 - For example: $Cyc(5,4) = \bar{a_1} + \bar{a_2} + \bar{a_3}  + \bar{a_4} +\bar{a_5}$, i.e. the sum of groups of 5-4=1 elements, chosen in $\bar{a_1}, \bar{a_2}, \bar{a_3}, \bar{a_4}, \bar{a_5}$.   
 - Another example: $Cyc(4,2) = \bar{a_1} \bar{a_2} + \bar{a_1} \bar{a_3} + \bar{a_1} \bar{a_4} + \bar{a_2} \bar{a_3} + \bar{a_2} \bar{a_4} + \bar{a_3} \bar{a_4}$, i.e., the sum of the products of all possible ordered pairs made with $\bar{a_1}, \bar{a_2}, \bar{a_3}, \bar{a_4}$.
 
 
 Note that $Cyc(n,k)$ has $C_{n,k} = \binom{n}{k}$ terms.  
-We can also define $Cyc(n,n)=1$
+We can also define $Cyc(n,n)=1$ and $Cyc(n,0)$ as the product of the terms.
 
 Using the above notation, the $a_1 \times a_2 \times \dots \times a_n$ hypercuboid has $2^k\cdot C(n,k)$ pieces which are $k$-colored.
 
-For example, consider the $2 \times 3 \times 5 \times 7$ hypercuboid, in this case:  
+A more rigorous and detailed version of what is shown above can be found in [this article](https://rayzz.me/articles/hypercubing/prisms-and-cubies.html) written by Raymond Zhao. In detail, it proves the general formula for counting $k$-c pieces for an $n$-dimensional cube of side $s$ as $\displaystyle 2^k \binom{n}{k} (s-2)^{n-k}$.
+
+[Here](https://tio.run/##rZHBjoIwEIbvfYqJXADLRlBjQuJe9rSnveyNEFOx6iTQknaI@PRsS13dB9hCAkz@@eb/h/5OV63W0xR9KisNgcWTtCDcDS1aKqEY1@N23EGWvUNV8DXf8l3NorM20AxHp73rARqhYLByboFuaAn7FhtBqFUJ1YY/rtpBqk2dbllkJcHXx6FH2TgGacgBzzPrJhQBXWXHQbuHuaEHOzkSrFjkSgrMoKA3@mJEx1iwvA/uHv6AveB718ai7H8Ow67Xxptx29K6tWH8wXgDnRjjnMMIGRQJ@BWNgCrstGbO8GloyAlb0R1PbsF@v3Nupcl/gWx9VkvVqoYUHg2xL@RlnTBGmuY4Ho0ebYS6yDjPnml5K1U8D0yWeVIycKfRg/J9RZpiaocu/gU3ujsGn/7N856x3nwF1fwLbfzIyOFFdxkxSWZ@b1BRbMnEmCwXDQQnJSx4GB1U3vtyHyostCy@NYn2r96Jkmn6AQ) is a link to a script for counting pieces in geneal case in $n$ dimensions: insert sides and run it.
+
+#### An Example
+Consider the $2 \times 3 \times 5 \times 7$ hypercuboid, in this case:  
 
 - $a_1$ =2, so $\bar{a_1}=0$,  
 - $a_2$ =3, so $\bar{a_2}=1$,  
@@ -44,8 +54,6 @@ So there will be:
 - For 4-colored pieces we have:  
   $2^4 \cdot Cyc(4,4)=2^4\cdot 1=  16$ pieces.
 
-[Here](https://tio.run/##rZHBjoIwEIbvfYqJXADLRlBjQuJe9rSnveyNEFOx6iTQknaI@PRsS13dB9hCAkz@@eb/h/5OV63W0xR9KisNgcWTtCDcDS1aKqEY1@N23EGWvUNV8DXf8l3NorM20AxHp73rARqhYLByboFuaAn7FhtBqFUJ1YY/rtpBqk2dbllkJcHXx6FH2TgGacgBzzPrJhQBXWXHQbuHuaEHOzkSrFjkSgrMoKA3@mJEx1iwvA/uHv6AveB718ai7H8Ow67Xxptx29K6tWH8wXgDnRjjnMMIGRQJ@BWNgCrstGbO8GloyAlb0R1PbsF@v3Nupcl/gWx9VkvVqoYUHg2xL@RlnTBGmuY4Ho0ebYS6yDjPnml5K1U8D0yWeVIycKfRg/J9RZpiaocu/gU3ujsGn/7N856x3nwF1fwLbfzIyOFFdxkxSWZ@b1BRbMnEmCwXDQQnJSx4GB1U3vtyHyostCy@NYn2r96Jkmn6AQ) is a link to a script for general case in $n$ dimensions: insert sides and run it.
-
 ## 4D Hypercuboids
 
 In 4 dimensions, a hypercuboid is denoted as $a \times b \times c \times d$.  
@@ -59,7 +67,7 @@ In the following sections, we will denote some of these cells using the classic 
 ### General solving strategies
 - Hypercuboids in the form $1 \times a \times b \times c$ can be solved by first orienting the $a \times b \times c$-cells, then solving the puzzle like a 3-dimensional $a \times b \times c$.
 - Hypercuboids in the form $2 \times a \times b \times c$ can be solved first by solving the $a \times b \times c$-cells and then solving the opposite, eventually adapting the solution for new possible cases.
-- If 2 dimensions have the same values, the puzzle can be seen as a duoprism. 
+- If 2 dimensions have the same values, the puzzle can be seen as a [duoprism](http://wiki.superliminal.com/wiki/Luna%27s_Duoprism_Method). 
 - If 3 dimensions have the same values, i.e. there is a couple of $n$-cubic cells, RKT can be used on these cells.
 - If 4 dimensions have the same values, we have a hypercube.
 
